@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/banner.jpg">
+
+</head>
+<body>
+    
+    <h3>Registration Form</h3>
+    <div class="container" >
+        <form action="/index.html" name="myForm" onsubmit="return validateForm()" method="post">
+            <label for="uname">Usrename</label><br>
+            <input type="text" id="uname" name="username" placeholder="Your username.." minlength="5" maxlength="12" required >
+
+            <label for="upass">Password</label><br>
+            <input type="text" id="upass" name="password" placeholder="Your password.." minlength="6" maxlength="16" required>
+
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required><br>
+
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required><br>
+
+            <label for="uemail">E-mail</label><br>
+            <input type="text" id="uemail" name="e-mail" class="e-mail" placeholder="Your e-mail.." required><br>
+
+            <label for="uadd">Address</label><br>
+            <!-- <input type="text" id="adss" name="address" placeholder="Your address.."><br> -->
+            <textarea id="uadd" name="address" placeholder="Write address.." style="height:100px" ></textarea>
+
+            <label for="ucountry">Country</label><br>
+            <select id="ucountry" name="country" placeholder="Please select a country" required><br>
+                <option value="">(Please select a county)</option>
+                <option value="australia">Australia</option><BR></BR>
+                <option value="canada">Canada</option><BR></BR>
+                <option value="usa">USA</option><BR></BR>
+                <option value="thai"  >Thai</option>
+            </select><br>
+
+            <label for="uzip">ZIP Code</label><br>
+            <input type="text" id="uzip" name="zipcode" placeholder="Your zip code..">
+
+            <h3>Language</h3>
+            <input type="radio" id="eng" name="language" value="english" required>
+            <label for="eng">English</label>
+            <input type="radio" id="th" name="language" value="thai">
+            <label for="th">Thai</label><br><br>
+
+            <h3>Gender</h3>
+            <input type="radio" id="male" name="sex" value="m" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="sex" value="f">
+            <label for="female">Female</label><br>
+            <input type="radio" id="lgbtqa+" name="sex" value="l">
+            <label for="lgbtqa+">LGBTQA+</label><br><br>
+
+            <label for="note">Note</label>
+            <textarea id="note" name="note" placeholder="Write something.." style="resize: none;" rows="5"></textarea>
+            
+            <input type="submit" value="Submit"/>
+        </form> 
+    </div>
+    <script src="form_validation.js"></script>
+</body>
+</html>
